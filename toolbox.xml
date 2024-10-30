@@ -1,4 +1,2 @@
-<category id="category_custom" name="MyBlock1026" colour="MyBlock1026">
-	<block type="hello1026c">
-	</block>
-</category>
+<category id="category_custom" name="miniTomas" colour="100">
+<block type="encodemotor"/></category>
