@@ -1,3 +1,5 @@
+Blockly.Arduino.encodemotor={};
+
 Blockly.Arduino['encodemotor'] = function(block) {
   var value_e1 = Blockly.Arduino.valueToCode(block, 'e1', Blockly.Arduino.ORDER_ATOMIC);
   var value_e2 = Blockly.Arduino.valueToCode(block, 'e2', Blockly.Arduino.ORDER_ATOMIC);
