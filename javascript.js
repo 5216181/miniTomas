@@ -6,6 +6,7 @@ Blockly.Arduino['encodemotor'] = function(block) {
   var value_e4 = Blockly.Arduino.valueToCode(block, 'e4', Blockly.Arduino.ORDER_ATOMIC);
   // TODO: Assemble Arduino into code variable.
   Blockly.Arduino.definitions_.encodemotor = "\nvoid mqttCallback() {} \n\n";
+  return "";
   /*
   var code = '\n';
 code=code + 'volatile long '+ value_e2.substr(1,value_e2.length-2) + ' = 0\n';
