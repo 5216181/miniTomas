@@ -5,7 +5,7 @@ Blockly.Arduino['encodemotor'] = function(block) {
   var value_e3 = Blockly.Arduino.valueToCode(block, 'e3', Blockly.Arduino.ORDER_ATOMIC);
   var value_e4 = Blockly.Arduino.valueToCode(block, 'e4', Blockly.Arduino.ORDER_ATOMIC);
   // TODO: Assemble Arduino into code variable.
-  Blockly.Arduino.definitions_.encodemotor = "\nvoid mqttCallback() {} \n\n";
+  Blockly.Arduino.definitions_.func_encodemotor = "\n void mqttCallback() {} \n\n";
   return "";
   /*
   var code = '\n';
