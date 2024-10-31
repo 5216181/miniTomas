@@ -42,5 +42,5 @@ code=code + '  }\n';
 */
   
 Blockly.Arduino.definitions_.func_encodemotor = code;
-return "";
+return "this is a test";
 };
