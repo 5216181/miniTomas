@@ -7,7 +7,7 @@ Blockly.Arduino['encodemotor'] = function(block) {
   // TODO: Assemble Arduino into code variable.
   
   var code = '\n';  
-code=code + 'volatile long '+ value_e2.substr(1,value_e2.length-2) + ' = 0\n' +
+code=code + 'volatile long '+ value_e2.substr(1,value_e2.length-2) + ' = 0\n\n' +
 
  'void '+value_e1.substr(1,value_e1.length-2)+'() {\n' +
  '  if (digitalRead('+value_e3.toString()+') == HIGH) {\n' +
@@ -40,6 +40,7 @@ code=code + '      '+value_e2.substr(1,value_e2.length-2)+'++;  // 顺时针旋�
 code=code + '    }\n';
 code=code + '  }\n';
 */
+  
 Blockly.Arduino.definitions_.func_encodemotor = code;
 return "";
 };
