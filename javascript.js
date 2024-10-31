@@ -1,4 +1,3 @@
-
 Blockly.Arduino['encodemotor'] = function(block) {
   var value_e1 = Blockly.Arduino.valueToCode(block, 'e1', Blockly.Arduino.ORDER_ATOMIC);
   var value_e2 = Blockly.Arduino.valueToCode(block, 'e2', Blockly.Arduino.ORDER_ATOMIC);
@@ -47,15 +46,15 @@ return "";
 
 //----------------------------------------------------------------------------------------------
 Blockly.Arduino['encodemotor_type2'] = function(block) {
-  var value_e2 = Blockly.JavaScript.valueToCode(block, 'e2', Blockly.JavaScript.ORDER_ATOMIC);
-  var value_e3 = Blockly.JavaScript.valueToCode(block, 'e3', Blockly.JavaScript.ORDER_ATOMIC);
-  var value_e4 = Blockly.JavaScript.valueToCode(block, 'e4', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_e2 = Blockly.Arduino.valueToCode(block, 'e2', Blockly.Arduino.ORDER_ATOMIC);
+  var value_e3 = Blockly.Arduino.valueToCode(block, 'e3', Blockly.Arduino.ORDER_ATOMIC);
+  var value_e4 = Blockly.Arduino.valueToCode(block, 'e4', Blockly.Arduino.ORDER_ATOMIC);
 
   
   var code = '\n' +
 //code=code + 'volatile long '+ value_e2.substr(1,value_e2.length-2) + ' = 0\n\n' +
 // 判斷方向1
- 'void 'encoderISR() {\n' +
+ 'void encoderISR() {\n' +
  '  if (digitalRead('+value_e3.toString()+') == HIGH) {\n' +
  '    if (digitalRead('+value_e4.toString()+') == LOW) {\n' +
  '      '+value_e2+'++;  // 順時針\n' +
@@ -71,5 +70,5 @@ Blockly.Arduino['encodemotor_type2'] = function(block) {
  '  }\n';  
 Blockly.Arduino.definitions_.func_encodemotor_type2 = code;
 
-return 'attachInterrupt('+value_e3.toString()'+','+' encoderISR, CHANGE);\n';
+return 'attachInterrupt('+value_e3.toString()+', encoderISR, CHANGE);\n';
 };
