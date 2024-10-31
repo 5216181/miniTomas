@@ -6,7 +6,7 @@ Blockly.Arduino['encodemotor'] = function(block) {
   var value_e4 = Blockly.Arduino.valueToCode(block, 'e4', Blockly.Arduino.ORDER_ATOMIC);
   // TODO: Assemble Arduino into code variable.
   
-  var code = '\n';  
+  var code = '\n' +
 //code=code + 'volatile long '+ value_e2.substr(1,value_e2.length-2) + ' = 0\n\n' +
 // 判斷方向1
  'void '+value_e1.substr(1,value_e1.length-2)+'() {\n' +
