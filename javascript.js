@@ -14,13 +14,13 @@ Blockly.Arduino['encodemotor'] = function(block) {
  '    if (digitalRead('+value_e4.toString()+') == LOW) {\n' +
  '      '+value_e2+'++;  // 順時針\n' +
  '    } else {\n' +
- '      '+value_e2.substr(1,value_e2.length-2)+'--;  // 逆時針\n' +
+ '      '+value_e2+'--;  // 逆時針\n' +
  '    }\n' +
  '  } else {\n' +
  '    if (digitalRead('+value_e4.toString()+') == LOW) {\n' +
- '      '+value_e2.substr(1,value_e2.length-2)+'--;  // 逆時針\n' +
+ '      '+value_e2+'--;  // 逆時針\n' +
  '    } else {\n' +
- '      '+value_e2.substr(1,value_e2.length-2)+'++;  // 順時針\n' +
+ '      '+value_e2+'++;  // 順時針\n' +
  '    }\n' +
  '  }\n'; 
   
