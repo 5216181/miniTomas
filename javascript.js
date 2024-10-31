@@ -7,22 +7,22 @@ Blockly.Arduino['encodemotor'] = function(block) {
   // TODO: Assemble Arduino into code variable.
   
   var code = '\n';  
-code=code + 'volatile long '+ value_e2.substr(1,value_e2.length-2) + ' = 0\n'; &&
+code=code + 'volatile long '+ value_e2.substr(1,value_e2.length-2) + ' = 0\n' +
 
- 'void '+value_e1.substr(1,value_e1.length-2)+'() {\n'; &&
- '  if (digitalRead('+value_e3.toString()+') == HIGH) {\n'; &&
- '    if (digitalRead('+value_e4.toString()+') == LOW) {\n'; &&
- '      '+value_e2.substr(1,value_e2.length-2)+'++;  // 顺时针\n'; &&
- '    } else {\n'; &&
- '      '+value_e2.substr(1,value_e2.length-2)+'--;  // 逆时针旋转\n'; &&
- '    }\n'; &&
- '  } else {\n'; &&
- '    if (digitalRead('+value_e4.toString()+') == LOW) {\n'; &&
- '      '+value_e2.substr(1,value_e2.length-2)+'--;  // 逆时针旋转\n'; &&
- '    } else {\n'; &&
- '      '+value_e2.substr(1,value_e2.length-2)+'++;  // 顺时针旋转\n'; &&
- '    }\n'; &&
- '  }\n'; &&
+ 'void '+value_e1.substr(1,value_e1.length-2)+'() {\n' +
+ '  if (digitalRead('+value_e3.toString()+') == HIGH) {\n' +
+ '    if (digitalRead('+value_e4.toString()+') == LOW) {\n' +
+ '      '+value_e2.substr(1,value_e2.length-2)+'++;  // 顺时针\n' +
+ '    } else {\n' +
+ '      '+value_e2.substr(1,value_e2.length-2)+'--;  // 逆时针旋转\n' +
+ '    }\n' +
+ '  } else {\n' +
+ '    if (digitalRead('+value_e4.toString()+') == LOW) {\n' +
+ '      '+value_e2.substr(1,value_e2.length-2)+'--;  // 逆时针旋转\n' +
+ '    } else {\n' +
+ '      '+value_e2.substr(1,value_e2.length-2)+'++;  // 顺时针旋转\n' +
+ '    }\n' +
+ '  }\n'; 
   
 /*
 // 判断方向
