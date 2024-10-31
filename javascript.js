@@ -8,7 +8,7 @@ Blockly.Arduino['encodemotor'] = function(block) {
   
   var code = '\n';  
 code=code + 'volatile long '+ value_e2.substr(1,value_e2.length-2) + ' = 0\n\n' +
-// 判斷方向
+// 判斷方向1
  'void '+value_e1.substr(1,value_e1.length-2)+'() {\n' +
  '  if (digitalRead('+value_e3.toString()+') == HIGH) {\n' +
  '    if (digitalRead('+value_e4.toString()+') == LOW) {\n' +
@@ -25,7 +25,7 @@ code=code + 'volatile long '+ value_e2.substr(1,value_e2.length-2) + ' = 0\n\n' 
  '  }\n'; 
   
 /*
-// 判断方向
+// 判断方向2
 code=code + '  if (digitalRead('+value_e3.toString()+') == HIGH) {\n';
 code=code + '    if (digitalRead('+value_e4.toString()+') == LOW) {\n';
 code=code + '      '+value_e2.substr(1,value_e2.length-2)+'++;  // 顺时针旋转\n';
