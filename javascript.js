@@ -68,7 +68,8 @@ Blockly.Arduino['encodemotor_type2'] = function(block) {
  '    } else {\n' +
  '      '+value_e2+'++;  // 順時針\n' +
  '    }\n' +
- '  }\n';  
+ '  }\n' +   
+ ' }\n';  
 Blockly.Arduino.definitions_.func_encodemotor_type2 = code;
 
 return 'attachInterrupt('+value_e3.toString()+', encoderISR, CHANGE);\n';
