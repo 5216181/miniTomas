@@ -21,6 +21,7 @@ Blockly.Arduino['encodemotor'] = function(block) {
  '    } else {\n' +
  '      '+value_e2+'++;  // 順時針\n' +
  '    }\n' +
+ '   }\n' +   
  '  }\n'; 
   
 /*
