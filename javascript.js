@@ -11,7 +11,7 @@ Blockly.Arduino['encodemotor'] = function(block) {
  'void '+value_e1.substr(1,value_e1.length-2)+'() {\n' +
  '  if (digitalRead('+value_e3.toString()+') == HIGH) {\n' +
  '    if (digitalRead('+value_e4.toString()+') == LOW) {\n' +
- '      '+value_e2+'++;  // 順時針\n' +
+ '      '+value_e2+'++;  // 順時針針\n' +
  '    } else {\n' +
  '      '+value_e2+'--;  // 逆時針\n' +
  '    }\n' +
