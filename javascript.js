@@ -1,3 +1,4 @@
+/*
 Blockly.Arduino['encodemotor'] = function(block) {
   var value_e1 = Blockly.Arduino.valueToCode(block, 'e1', Blockly.Arduino.ORDER_ATOMIC);
   var value_e2 = Blockly.Arduino.valueToCode(block, 'e2', Blockly.Arduino.ORDER_ATOMIC);
@@ -43,7 +44,7 @@ code=code + '  }\n';
 Blockly.Arduino.definitions_.func_encodemotor = code;
 return "";
 };
-
+*/
 //----------------------------------------------------------------------------------------------
 Blockly.Arduino['encodemotor_type2'] = function(block) {
   var value_e2 = Blockly.Arduino.valueToCode(block, 'e2', Blockly.Arduino.ORDER_ATOMIC);
