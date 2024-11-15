@@ -1,4 +1,4 @@
-/*
+
 Blockly.Arduino['encodemotor'] = function(block) {
   var value_e1 = Blockly.Arduino.valueToCode(block, 'e1', Blockly.Arduino.ORDER_ATOMIC);
   var value_e2 = Blockly.Arduino.valueToCode(block, 'e2', Blockly.Arduino.ORDER_ATOMIC);
@@ -24,7 +24,7 @@ Blockly.Arduino['encodemotor'] = function(block) {
  '    }\n' +
  '   }\n' +   
  '  }\n'; 
-/*
+
 // 判断方向2
 code=code + '  if (digitalRead('+value_e3.toString()+') == HIGH) {\n';
 code=code + '    if (digitalRead('+value_e4.toString()+') == LOW) {\n';
@@ -39,12 +39,12 @@ code=code + '    } else {\n';
 code=code + '      '+value_e2.substr(1,value_e2.length-2)+'++;  // 顺时针旋转\n';
 code=code + '    }\n';
 code=code + '  }\n';
-*/
+
   
 Blockly.Arduino.definitions_.func_encodemotor = code;
 return "";
 };
-*/
+
 //----------------------------------------------------------------------------------------------
 Blockly.Arduino['encodemotor_type2'] = function(block) {
   var value_e2 = Blockly.Arduino.valueToCode(block, 'e2', Blockly.Arduino.ORDER_ATOMIC);
@@ -73,4 +73,12 @@ Blockly.Arduino['encodemotor_type2'] = function(block) {
 Blockly.Arduino.definitions_.func_encodemotor_type2 = code;
 
 return 'attachInterrupt('+value_e3.toString()+', encoderISR, CHANGE);\n';
+};
+//-----------------------------------------------------------------------------------------------
+Blockly.JavaScript['pinmode1114'] = function(block) {
+  var value_i1 = Blockly.JavaScript.valueToCode(block, 'i1', Blockly.JavaScript.ORDER_ATOMIC);
+  var dropdown_i2 = block.getFieldValue('i2');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
 };
