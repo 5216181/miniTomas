@@ -44,6 +44,7 @@ Blockly.Blocks['encodemotor'] = {
 };
 
 //--------------------------------------------------------------------------------
+/*
 Blockly.Blocks['pinmode1114'] = {
   init: function() {
     this.appendValueInput("i1")
@@ -61,3 +62,4 @@ Blockly.Blocks['pinmode1114'] = {
  this.setHelpUrl("");
   }
 };
+*/
