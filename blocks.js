@@ -19,7 +19,7 @@ Blockly.Blocks['encodemotor_type2'] = {
  this.setHelpUrl("");
   }
 };
-/*
+//-------------------------------------------------------------------------------------------
 Blockly.Blocks['encodemotor'] = {
   init: function() {
     this.appendDummyInput()
@@ -42,4 +42,21 @@ Blockly.Blocks['encodemotor'] = {
  this.setHelpUrl("");
   }
 };
-*/
+//-----------------------------------------------------------------------------------------------
+Blockly.Blocks['pinmode1114'] = {
+  init: function() {
+    this.appendValueInput("i1")
+        .setCheck("Number")
+        .appendField("宣告腳位");
+    this.appendDummyInput()
+        .appendField("為");
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldDropdown([["輸入INPUT","INPUT"], ["輸出OUTPUT","OUTPUT"]]), "i2");
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(50);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
