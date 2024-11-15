@@ -55,7 +55,7 @@ Blockly.Arduino['encodemotor_type2'] = function(block) {
   var code = '\n' +
 //code=code + 'volatile long '+ value_e2.substr(1,value_e2.length-2) + ' = 0\n\n' +
 // 判斷方向1
- 'void encoderISR() {\n' +
+ 'void encoder_ISR() {\n' +
  '  if (digitalRead('+value_e3.toString()+') == HIGH) {\n' +
  '    if (digitalRead('+value_e4.toString()+') == LOW) {\n' +
  '      '+value_e2+'++;  // 順時針\n' +
