@@ -1,4 +1,4 @@
-<category id="category_custom" name="miniTomas" colour="100">
+<category id="category_custom" name="miniTomas" colour="200">
 <block type="encodemotor_type2"/>
 <block type="encodemotor"/>
 </category>
