@@ -19,7 +19,7 @@ Blockly.Blocks['encodemotor_type2'] = {
  this.setHelpUrl("");
   }
 };
-
+/*
 Blockly.Blocks['encodemotor'] = {
   init: function() {
     this.appendDummyInput()
@@ -42,3 +42,4 @@ Blockly.Blocks['encodemotor'] = {
  this.setHelpUrl("");
   }
 };
+*/
