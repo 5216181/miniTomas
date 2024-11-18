@@ -1,4 +1,6 @@
-Blockly.Blocks['pinmode1114'] = {
+
+//Blockly.Blocks['pinmode1114'] = {
+Blockly.Blocks.pinmode1114 = {
   init: function() {
     this.appendValueInput("i1")
         .setCheck("Number")
@@ -17,7 +19,8 @@ Blockly.Blocks['pinmode1114'] = {
 };
 
 
-Blockly.Blocks['encodemotor'] = {
+//Blockly.Blocks['encodemotor'] = {
+Blockly.Blocks.encodemotor = {  
   init: function() {
     this.appendDummyInput()
         .appendField("編碼馬達");
@@ -40,7 +43,8 @@ Blockly.Blocks['encodemotor'] = {
   }
 };
 
-Blockly.Blocks['encodemotor_type2'] = {
+//Blockly.Blocks['encodemotor_type2'] = {
+Blockly.Blocks.encodemotor_type2 = {
   init: function() {
     this.appendDummyInput()
         .appendField("AB相編碼馬達");
