@@ -81,9 +81,11 @@ return 'attachInterrupt('+value_e3.toString()+', encoderISR, CHANGE);\n';
 //-----------------------------------------------------------------------------------------------
 //Blockly.Arduino['pinmode1114'] = function(block) {
 Blockly.Arduino.pinmode1114 = function(block) {  
+  /*
   var value_i1 = Blockly.Arduino.valueToCode(block, 'i1', Blockly.Arduino.ORDER_ATOMIC);
   var dropdown_i2 = block.getFieldValue('i2');
   // TODO: Assemble JavaScript into code variable.
   var code = '...;\n';
+  */
   return code;
 };
