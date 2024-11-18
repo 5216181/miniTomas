@@ -1,5 +1,5 @@
 <category id="category_custom" name="miniTomas" colour="200">
 <block type="pinmode1114"></block>
-//<block type="encodemotor"></block>
-//<block type="encodemotor_type2"></block>
+<block type="encodemotor"></block>
+<block type="encodemotor_type2"></block>
 </category>
