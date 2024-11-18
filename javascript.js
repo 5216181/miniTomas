@@ -74,6 +74,8 @@ Blockly.Arduino.definitions_.func_encodemotor_type2 = code;
 
 return 'attachInterrupt('+value_e3.toString()+', encoderISR, CHANGE);\n';
 };
+
+
 //-----------------------------------------------------------------------------------------------
 Blockly.Arduino['pinmode1114'] = function(block) {
   var value_i1 = Blockly.Arduino.valueToCode(block, 'i1', Blockly.Arduino.ORDER_ATOMIC);
