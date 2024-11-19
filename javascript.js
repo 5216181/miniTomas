@@ -3,7 +3,8 @@ Blockly.Arduino['pinmode1114'] = function(block) {
   var value_i1 = Blockly.Arduino.valueToCode(block, 'i1', Blockly.Arduino.ORDER_ATOMIC);
   var dropdown_i2 = block.getFieldValue('i2');
   // TODO: Assemble Arduino into code variable.
-  var code = '...;\n';
+  var code = '\n'+
+    'pinMode(' + value_i1.toString() + ',' + dropdown_i2 +');\n' 
   return code;
 };
 
