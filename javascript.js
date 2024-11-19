@@ -13,7 +13,7 @@ Blockly.Arduino['encodemotor'] = function(block) {
   var value_e3 = Blockly.Arduino.valueToCode(block, 'e3', Blockly.Arduino.ORDER_ATOMIC);
   var value_e4 = Blockly.Arduino.valueToCode(block, 'e4', Blockly.Arduino.ORDER_ATOMIC);
   // TODO: Assemble Arduino into code variable.
-  var code = '...;\n';
+  var code = 'P1...;\n';
   return code;
 };
 
@@ -22,6 +22,6 @@ Blockly.Arduino['encodemotor_type2'] = function(block) {
   var value_e3 = Blockly.Arduino.valueToCode(block, 'e3', Blockly.Arduino.ORDER_ATOMIC);
   var value_e4 = Blockly.Arduino.valueToCode(block, 'e4', Blockly.Arduino.ORDER_ATOMIC);
   // TODO: Assemble Arduino into code variable.
-  var code = '...;\n';
+  var code = 'P2...;\n';
   return code;
 };
