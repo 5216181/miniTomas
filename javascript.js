@@ -60,5 +60,5 @@ Blockly.Arduino['encodemotor_type2'] = function(block) {
  ' }\n';  
 Blockly.Arduino.definitions_.func_encodemotor_type2 = code;
 
-return 'attachInterrupt('+value_e3.toString()+', encoderISR, CHANGE);\n';
+return 'attachInterrupt('+value_e3.toString()+', encoder_ISR, CHANGE);\n';
 };
