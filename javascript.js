@@ -33,7 +33,7 @@ Blockly.Arduino['encodemotor'] = function(block) {
  '   }\n' +   
  '  }\n'; 
 Blockly.Arduino.definitions_.func_encodemotor = code;
-//Blockly.Arduino.setups_.setup_neopixel_begin="pixels.begin();\n";
+
 Blockly.Arduino.setups_["print_attachInterrupt"]='attachInterrupt('+value_e3.toString()+','+value_e1.substr(1,value_e1.length-2)+', CHANGE);\n';
 //return 'attachInterrupt('+value_e3.toString()+','+value_e1.substr(1,value_e1.length-2)+', CHANGE);\n';
   return ""
