@@ -47,7 +47,8 @@ Blockly.Arduino['encodemotor_type2'] = function(block) {
   var value_e4 = Blockly.Arduino.valueToCode(block, 'e4', Blockly.Arduino.ORDER_ATOMIC);
   // TODO: Assemble Arduino into code variable.
  var code = '\n' +
- 'void encoder_ISR() {\n' +        
+ //'void encoder_ISR() {\n' +        
+  'void encoder_ISR'+value_e3.toString()+'() {\n' +    
  '  if (digitalRead('+value_e3.toString()+') == HIGH) {\n' +         // 判斷方向
  '    if (digitalRead('+value_e4.toString()+') == LOW) {\n' +
  '      '+value_e2+'++;  // 順時針\n' +
@@ -62,7 +63,11 @@ Blockly.Arduino['encodemotor_type2'] = function(block) {
  '    }\n' +
  '  }\n' +   
  ' }\n';  
-Blockly.Arduino.definitions_.func_encodemotor_type2 = code;
+//Blockly.Arduino.definitions_.func_encodemotor_type2 = code;
 
-return 'attachInterrupt('+value_e3.toString()+', encoder_ISR, CHANGE);\n';
+//return 'attachInterrupt('+value_e3.toString()+', encoder_ISR, CHANGE);\n';
+
+Blockly.Arduino.definitions_['func_' +value_e3.toString() ] = code;
+Blockly.Arduino.setups_['Interrupt'+value_e3.toString()]='attachInterrupt('+value_e3.toString()+','+'encoder_ISR'+value_e3.toString()+', CHANGE);\n';
+return ""
 };
