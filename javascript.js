@@ -69,7 +69,7 @@ Blockly.Arduino['encodemotor_type2'] = function(block) {
 //return 'attachInterrupt('+value_e3.toString()+', encoder_ISR, CHANGE);\n';
 
 Blockly.Arduino.definitions_['func_' +value_e3.toString() ] = code;
-Blockly.Arduino.setups_['Interrupt'+value_e3.toString()]='attachInterrupt('+value_e3.toString()+','+'encoder_ISR'+value_e3.toString()+', CHANGE);\n';
-return  'attachInterrupt('+value_e3.toString()+','+'encoder_ISR'+value_e3.toString()+', CHANGE); //T1\n'; 
+//Blockly.Arduino.setups_['Interrupt'+value_e3.toString()]='attachInterrupt('+value_e3.toString()+','+'encoder_ISR'+value_e3.toString()+', CHANGE);\n';
+return  'attachInterrupt('+value_e3.toString()+','+'encoder_ISR'+value_e3.toString()+', CHANGE); //T2\n'; 
 //return ""
 };
