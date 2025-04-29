@@ -37,7 +37,7 @@ Blockly.Arduino.definitions_['func_' +value_e3.toString() ] = code;
 
 //Blockly.Arduino.setups_['Interrupt'+value_e3.toString()]='attachInterrupt('+value_e3.toString()+','+value_e1.substr(1,value_e1.length-2)+', CHANGE);\n';
 //return 'attachInterrupt('+value_e3.toString()+','+value_e1.substr(1,value_e1.length-2)+', CHANGE);\n';
-  return 'attachInterrupt('+value_e3.toString()+','+value_e1.substr(1,value_e1.length-2)+', CHANGE);\n';
+  return 'attachInterrupt('+value_e3.toString()+','+value_e1.substr(1,value_e1.length-2)+', CHANGE); //t1\n';
 //return ""
 };
 
